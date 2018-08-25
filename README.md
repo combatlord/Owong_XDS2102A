@@ -1,1 +1,14 @@
 # Owong_XDS2102A Bin file Reader
+
+Tool to display bin files created by an Owong XDS2102A Oscilloscope.
+
+File format:
+
+SPBXDS followed by the 4 Bytes length of the following JSON description  
+eg.: A7020000 meaning 679 Bytes of JSON description
+followed by 10000 2Bytes Values (corresponds Data_length 10000 in JSON block)
+
+In case a second channel is stored the JSON block is longer
+eg.: 09050000 meaning 1289 Bytes of JSON description
+Followed by 2 * 10000 2 Bytes Values ...
+

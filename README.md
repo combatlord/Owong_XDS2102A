@@ -12,3 +12,6 @@ In case a second channel is stored the JSON block is longer
 eg.: 09050000 meaning 1289 Bytes of JSON description
 Followed by 2 * 10000 2 Bytes Values ...
 
+Hint: This is very experimental, not sure if I decode the values right ...
+
+

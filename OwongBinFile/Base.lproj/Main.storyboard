@@ -709,55 +709,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="544" height="388"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tmp-iv-CsZ">
-                                <rect key="frame" x="14" y="13" width="73" height="32"/>
-                                <buttonCell key="cell" type="push" title="Open" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0i4-ul-klu">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="OpenOsziFileAction:" target="XfG-lQ-9wD" id="60f-PV-Ceg"/>
-                                </connections>
-                            </button>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHy-k1-CtQ">
-                                <rect key="frame" x="19" y="60" width="506" height="309"/>
+                                <rect key="frame" x="19" y="45" width="506" height="324"/>
                                 <clipView key="contentView" id="NPV-Jx-5aT">
-                                    <rect key="frame" x="1" y="1" width="504" height="307"/>
+                                    <rect key="frame" x="1" y="1" width="504" height="322"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <customView translatesAutoresizingMaskIntoConstraints="NO" id="doc-RC-chb" customClass="ChannelView" customModule="OwongBinFile" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="10000" height="4000"/>
+                                        <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="doc-RC-chb" customClass="ChannelView" customModule="OwongBinFile" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="15" width="10000" height="4000"/>
                                         </customView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="doc-RC-chb" firstAttribute="leading" secondItem="NPV-Jx-5aT" secondAttribute="leading" id="FO5-fh-8Nb"/>
-                                        <constraint firstItem="doc-RC-chb" firstAttribute="top" secondItem="NPV-Jx-5aT" secondAttribute="top" constant="-3693" id="KBl-Kg-6rj"/>
-                                        <constraint firstAttribute="trailing" secondItem="doc-RC-chb" secondAttribute="trailing" constant="-9496" id="pY2-EX-SMm"/>
-                                        <constraint firstAttribute="bottom" secondItem="doc-RC-chb" secondAttribute="bottom" id="yBk-lB-0av"/>
+                                        <constraint firstAttribute="bottom" secondItem="doc-RC-chb" secondAttribute="bottom" id="7YI-37-vMY"/>
+                                        <constraint firstItem="doc-RC-chb" firstAttribute="top" secondItem="NPV-Jx-5aT" secondAttribute="top" constant="-3678" id="AEC-dS-klp"/>
+                                        <constraint firstItem="doc-RC-chb" firstAttribute="leading" secondItem="NPV-Jx-5aT" secondAttribute="leading" id="FFI-hT-KQn"/>
+                                        <constraint firstAttribute="trailing" secondItem="doc-RC-chb" secondAttribute="trailing" constant="-9496" id="hBG-oo-q0Z"/>
                                     </constraints>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="gC4-8l-Let">
-                                    <rect key="frame" x="1" y="292" width="504" height="16"/>
+                                    <rect key="frame" x="1" y="307" width="504" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="0.99945843487679398" horizontal="NO" id="CmT-pv-hnv">
-                                    <rect key="frame" x="489" y="1" width="16" height="307"/>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="CmT-pv-hnv">
+                                    <rect key="frame" x="489" y="1" width="16" height="322"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NKV-vX-jFa">
+                                <rect key="frame" x="17" y="20" width="508" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Open an Owong bin file" id="qAa-vI-gyL">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Tmp-iv-CsZ" secondAttribute="bottom" constant="20" symbolic="YES" id="4An-sl-PaK"/>
-                            <constraint firstItem="Tmp-iv-CsZ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="F6x-YS-Zae"/>
-                            <constraint firstItem="Tmp-iv-CsZ" firstAttribute="top" secondItem="OHy-k1-CtQ" secondAttribute="bottom" constant="19" id="G0V-cT-vsJ"/>
-                            <constraint firstItem="OHy-k1-CtQ" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="IS1-qF-1xH"/>
-                            <constraint firstItem="OHy-k1-CtQ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="19" id="luU-nW-xkC"/>
-                            <constraint firstItem="OHy-k1-CtQ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="19" id="rXT-lx-Tno"/>
+                            <constraint firstItem="OHy-k1-CtQ" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="E3X-Kb-a5g"/>
+                            <constraint firstItem="OHy-k1-CtQ" firstAttribute="leading" secondItem="NKV-vX-jFa" secondAttribute="leading" id="EHI-F9-Pa5"/>
+                            <constraint firstAttribute="bottom" secondItem="NKV-vX-jFa" secondAttribute="bottom" constant="20" symbolic="YES" id="VJX-7k-SOz"/>
+                            <constraint firstItem="OHy-k1-CtQ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="19" id="WGP-TL-LJ6"/>
+                            <constraint firstItem="OHy-k1-CtQ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="19" id="YQ0-cK-5ye"/>
+                            <constraint firstItem="NKV-vX-jFa" firstAttribute="top" secondItem="OHy-k1-CtQ" secondAttribute="bottom" constant="8" symbolic="YES" id="aUZ-AU-xhF"/>
+                            <constraint firstAttribute="trailing" secondItem="NKV-vX-jFa" secondAttribute="trailing" constant="21" id="wSW-eU-gLR"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="channelViewOutlet" destination="doc-RC-chb" id="dwv-PT-4Q1"/>
+                        <outlet property="infolabel" destination="NKV-vX-jFa" id="aQv-Ys-QCF"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

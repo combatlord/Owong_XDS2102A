@@ -71,6 +71,8 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var channelViewOutlet: ChannelView!
     
+    @IBOutlet weak var infolabel: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -83,15 +85,9 @@ class ViewController: NSViewController {
         }
     }
     
-    
-    @IBAction func OpenOsziFileAction(_ sender: Any) {
-        
-        print("OpenOsziFileAction")
-        
-        // http://stackoverflow.com/questions/30093688/how-to-create-range-in-swift
-        // http://stackoverflow.com/questions/39655472/nsdata-to-data-swift-3
-        
-        // let header_range: Range = 0..<32
+    // connect your view controller to the first responder window adding the openDocument method
+    @IBAction func openDocument(_ sender: NSMenuItem) {
+        print("openDocument ViewController")
         
         var second_channel_available = false
         if let url = NSOpenPanel().selectUrl {
@@ -99,6 +95,8 @@ class ViewController: NSViewController {
             print("file selected  = \(url.path)")
             print("filename       = \(url.lastPathComponent)")
             print("pathExtension  = \(url.pathExtension)")
+            
+            infolabel.stringValue = url.lastPathComponent
             
             let data = NSData(contentsOf: url as URL) as Data?  // <==== Added 'as Data?'
             if let data = data {                                // <==== Added 'if let'
@@ -183,5 +181,7 @@ class ViewController: NSViewController {
             }
         }
     }
+    
+
 }
 

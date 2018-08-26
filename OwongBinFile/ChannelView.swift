@@ -45,11 +45,11 @@ class ChannelView: NSView {
     
         var actual_value = Int(ch1_values[0]) + 256 * Int(ch1_values[1])
 
-        ch1.move(to: NSMakePoint(0, 0.05 * CGFloat(actual_value))) // start point
+        ch1.move(to: NSMakePoint(0, 1.0 * CGFloat(actual_value))) // start point
 
         for i in 0 ..< ch1_cnt/2 {
             actual_value = Int(ch1_values[i]) + 256 * Int(ch1_values[2*i + 1])
-            ch1.line(to: NSMakePoint(CGFloat(i), 0.05 * CGFloat(actual_value))) // destination
+            ch1.line(to: NSMakePoint(CGFloat(i), 1.0 * CGFloat(actual_value))) // destination
         }
         ch1.stroke()  // draw line(s) in color
         
@@ -60,11 +60,11 @@ class ChannelView: NSView {
         
         actual_value = Int(ch2_values[0]) + 256 * Int(ch2_values[1])
         
-        ch2.move(to: NSMakePoint(0, 0.05 * CGFloat(actual_value))) // start point
+        ch2.move(to: NSMakePoint(0, 1.0 * CGFloat(actual_value))) // start point
         
         for i in 0 ..< ch2_cnt/2 {
             actual_value = Int(ch2_values[i]) + 256 * Int(ch2_values[2*i + 1])
-            ch2.line(to: NSMakePoint(CGFloat(i), 0.05 * CGFloat(actual_value))) // destination
+            ch2.line(to: NSMakePoint(CGFloat(i), 1.0 * CGFloat(actual_value))) // destination
         }
         
         ch2.stroke()  // draw line(s) in color

@@ -712,11 +712,11 @@
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHy-k1-CtQ">
                                 <rect key="frame" x="19" y="45" width="506" height="324"/>
                                 <clipView key="contentView" id="NPV-Jx-5aT">
-                                    <rect key="frame" x="1" y="1" width="504" height="322"/>
+                                    <rect key="frame" x="1" y="1" width="489" height="307"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="doc-RC-chb" customClass="ChannelView" customModule="OwongBinFile" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="15" width="10000" height="4000"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="10000" height="5000"/>
                                         </customView>
                                     </subviews>
                                     <constraints>
@@ -728,11 +728,11 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="gC4-8l-Let">
-                                    <rect key="frame" x="1" y="307" width="504" height="16"/>
+                                    <rect key="frame" x="1" y="308" width="489" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="CmT-pv-hnv">
-                                    <rect key="frame" x="489" y="1" width="16" height="322"/>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="0.99637758363520135" horizontal="NO" id="CmT-pv-hnv">
+                                    <rect key="frame" x="490" y="1" width="15" height="307"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>

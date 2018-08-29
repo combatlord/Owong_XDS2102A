@@ -3,6 +3,7 @@
 Tool to display bin files created by an Owong XDS2102A Oscilloscope.
 ![Owong Image](https://github.com/frcocoatst/Owong_XDS2102A/blob/master/p3.jpg)
 
+![Owong Image](https://github.com/frcocoatst/Owong_XDS2102A/blob/master/p4.jpg)
 
 File format:
 
